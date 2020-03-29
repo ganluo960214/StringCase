@@ -1,0 +1,2 @@
+# StringCase
+string cases conversion
