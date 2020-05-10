@@ -18,9 +18,7 @@ func ToSnakeCase(s string) string {
 
 	for i := 0; i < len(rs); i++ {
 		if IsUpper(rs[i]) { // find first upper char
-			begin := i
-			end := i
-
+			begin, end := i, i
 			for ; i < len(rs); i++ { // find upper chars after first upper char
 				if IsUpper(rs[i]) {
 					end = i
