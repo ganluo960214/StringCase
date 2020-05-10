@@ -17,11 +17,11 @@ func ToSnakeCase(s string) string {
 	b.Grow(len(rs))
 
 	for i := 0; i < len(rs); i++ {
-		if IsUpper(rs[i]) {
+		if IsUpper(rs[i]) { // find first upper char
 			begin := i
 			end := i
 
-			for ; i < len(rs); i++ {
+			for ; i < len(rs); i++ { // find upper chars after first upper char
 				if IsUpper(rs[i]) {
 					end = i
 				} else {

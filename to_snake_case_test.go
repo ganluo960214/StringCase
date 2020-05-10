@@ -2,26 +2,26 @@ package StringCase
 
 import "testing"
 
-func TestToSnakeCaseSnakeToSnake(t *testing.T) {
+func Test_SnakeCaseToSnakeCase(t *testing.T) {
 	origin := "snake_case"
 	except := "snake_case"
 	if s := ToSnakeCase(origin); s != except {
-		t.Fatalf("snack to snack but string changed\norigin:%s\nexcept:%s\nnow:%s", origin, except, s)
+		t.Fatalf("snack case to snack case\norigin:%s\nexcept:%s\nnow:%s", origin, except, s)
 	}
 }
 
-func TestToSnakeCaseLowerCamelToSnake(t *testing.T) {
+func Test_LowerCamelToSnakeCase(t *testing.T) {
 	origin := "lowerCamelCase"
 	except := "lower_camel_case"
 	if s := ToSnakeCase(origin); s != except {
-		t.Fatalf("lower camel case to snack but string changed\norigin:%s\nexcept:%s\nnow:%s", origin, except, s)
+		t.Fatalf("lower camel case to snack case\norigin:%s\nexcept:%s\nnow:%s", origin, except, s)
 	}
 }
 
-func TestToSnakeCaseUpperCamelToSnake(t *testing.T) {
+func Test_UpperCamelToSnakeCase(t *testing.T) {
 	origin := "UpperCamelCase"
 	except := "upper_camel_case"
 	if s := ToSnakeCase(origin); s != except {
-		t.Fatalf("upper camel case to snack but string changed\norigin:%s\nexcept:%s\nnow:%s", origin, except, s)
+		t.Fatalf("upper camel case to snack case\norigin:%s\nexcept:%s\nnow:%s", origin, except, s)
 	}
 }
